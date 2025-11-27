@@ -7,4 +7,5 @@
 If you use this code in your research, please cite our paper:
 
 > Sakar, C., Tsukanov, K., Schwartz, N., & Moreno, Z. (2025). A physics-informed neural network workflow for forward and inverse modeling of unsaturated flow and root water uptake from hydrogeophysical data. Journal of Hydrology. https://doi.org/10.1016/j.jhydrol.2025.134675
+> 
 This repository contains the PyTorch implementation of the PINN framework described in the paper.
