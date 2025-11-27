@@ -1,25 +1,3 @@
-"""
-based on run 30, turning ERT to Se, because PINN predicts Se, so we train correctly.
-based on run 29,  RU_max: float = 0.00435
-based on run 28, activation function changed to allow very low values (-10) before sigmoid activation, to get low pressures.
-based on run 27, theta_r = 0.001, 20 cycles, irreducible_water_content: float = 0.001
-based on run 26, theta_r = 0.02 from 0.04, RU_max = 0.0045   # instead of 0.005
-based on RUN 23, added new loss for total R from hydrus vs from pinn, for timesteps until 28days, calculated every epoch
-reduced the cycles to 10.
-COLLOCATION POINTS 10 TIMES, 20000, 2000, 4000)
-Improved PINN for Richards' Equation with Adaptive Residual-Based Sampling and ERT Inversion Data
-MODIFIED FOR REDUCED DOMAIN: z ∈ [4.5, 6.0] m (root zone only)
-================================================================================================
-Enhanced version with:
- - Better configuration management
- - Fixed uptake constraints
- - Checkpointing and recovery
- - Improved memory management
- - Better error handling and logging
- - TensorBoard integration
- - Batch processing for large datasets
-"""
-
 import os
 import time
 import logging
@@ -2978,3 +2956,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
